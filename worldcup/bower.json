@@ -1,0 +1,27 @@
+{
+  "name": "pureCss",
+  "version": "0.0.1",
+  "description": "my first pureProject",
+  "main": "index.html",
+  "keywords": [
+    "purecss"
+  ],
+  "authors": [
+    "liuxing"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure":"*",
+	"jquery": "2.1.0",
+	"bxslider-4":"4.1.2",
+	"jQuery-One-Page-Nav":"3.0.0"
+  }
+}

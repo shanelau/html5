@@ -1,0 +1,577 @@
+/* CSS Document */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.3em;
+    color: #7f8c8d;
+    font-size: 12px;
+	Font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+/*  menu */
+#menu{
+	height:50px;
+	*height:45px;
+	background: none repeat scroll 0% 0% #333;
+}
+.home-menu {
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+	 padding: 0.5em;
+}
+#menu .ul{
+	padding:0 auto;
+}
+
+#menu .logo{
+	border-right:#ddd 1px solid;
+	margin-top: 5px;
+}
+#menu .meizu{
+	padding:10px 20px;
+}
+#nav{
+	padding: 0px 15px;
+}
+.home-menu.pure-menu-open {
+    background: #2d3e50;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+	*padding-top: 10px;
+	*float:left;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+	color:#ccc;
+}
+.home-menu li a{
+	font-size:1.1em;
+}
+.home-menu li a:hover,
+.home-menu li.current a,
+.home-menu li a:focus {
+	color:#fff;
+    border: none;
+	font-weight:bold;
+}
+/*
+ * -- PURE FORM STYLES --
+ * Style the form inputs and labels
+ */
+.pure-form label {
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.pure-form input[type] {
+    border: 2px solid #ddd;
+    box-shadow: none;
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/*
+ * -- PURE BUTTON STYLES --
+ * I want my pure-button elements to look a little different
+ */
+.pure-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+}
+
+a.pure-button-primary {
+    background: white;
+    color: #1f8dd6;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+/* slider */
+
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+    background: #1f8dd6;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* This is the main heading that appears on the blue section */
+.splash-head {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: 3px solid white;
+    padding: 1em 1.6em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+}
+
+/* This is the subheading that appears on the blue section */
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    width: 100%;
+    min-height: 12%;
+    z-index: 1;
+    background: white;
+
+}
+
+/* This is the class used for the main content headers (<h2>) */
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+/* This is a modifier class used when the content-head is inside a ribbon */
+.content-head-ribbon {
+    color: white;
+}
+
+/* This is the class used for the content sub-headers (<h3>) */
+.content-subhead {
+    color: #1f8dd6;
+}
+    .content-subhead i {
+        margin-right: 7px;
+    }
+
+/* This is the class used for the dark-background areas. */
+.ribbon {
+    background: #2d3e50;
+    color: #aaa;
+}
+
+/* This is the class used for the footer */
+.footer {
+    background: #111;
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+
+
+.content-wrapper{
+	width:90%; margin:0 auto;
+}
+
+
+ul.bxslider{
+	margin:0;
+	padding:0;
+
+}
+/*菜单*/
+.current a{
+	color:#00F;
+}
+
+/* 分组情况*/
+#section-2{
+	margin:0 auto;
+	padding-top:50px;
+	width:90%;
+}
+#section-2 .zu{
+	text-align:center;
+	padding:20px 0;
+} 
+
+
+#section-2 h2,#section-3 h2{
+	margin-bottom:0;
+	color:#ccc;
+	font-size:1.5em;
+	font-style:italic;
+}
+#section-2 h2{
+		margin-left: -100px;
+}
+#section-3 h2{
+		margin-left: -40px;
+}
+.game{
+	padding:10px 0;	
+}
+.zu .team{
+	margin:0 auto;
+	height:44px;
+}
+#group{
+	padding-bottom:100px;
+}
+#group .zu .team{
+	padding:30px 0;
+	width:211px;
+}
+#section-3{
+	border-top: 1px solid #eee;
+}
+#section-3 .pure-u-1-2 .game .dui2{
+	*width:40%;
+}
+#section-3 .kedui{
+	margin-left:10px;
+}
+.zu .team .counrty{
+	display:inline-block;
+	*zoom:1;*display:inline;
+	background:url(../images/country.png);
+	width:78px;
+	height:44px;
+	margin-left:-10px;
+	float:left;
+} 
+.zu .team .c_text{
+	width:103px;
+	display:inline-block;
+	*zoom:1;*display:inline;
+	height:44px;
+	-webkit-transform: skew(-15deg);
+ 	-moz-transform: skew(-15deg);
+	 -o-transform: skew(-15deg);
+	 -ms-transform: skew(-15deg);
+	background: none repeat scroll 0% 0% #e6e6e6;
+	margin-left: -10px;
+	float:left;
+	*margin-top: 10px;
+	*background: none;
+}
+.zu .team span{
+	vertical-align: -80%;
+	*vertical-align:auto;
+}
+#section-3 .zu .team .c_text{
+	*margin-top: 15px;
+}
+
+#section-3{
+	padding:100px 0;
+}
+#section-3 .time{
+	width:53px;
+	display:inline-block;
+	*zoom:1;*display:inline;
+	height:44px;
+	-webkit-transform: skew(-15deg);
+ 	-moz-transform: skew(-15deg);
+	-o-transform: skew(-15deg);
+	-ms-transform: skew(-15deg);
+	background: none repeat scroll 0% 0% #e6e6e6;
+	margin-left: -10px;
+	float:left;
+	*background: none;
+	*margin-top:15px;
+	*font-weight:bold;
+}
+#section-3 .pure-g-r{
+ margin:0 auto;
+}
+#section-3 .pure-g-r .zu{
+	display:inline-block;
+	*zoom:1;*display:inline;
+	*width:30%;
+}
+#section-3 .pure-g-r .vs{
+line-height:29px; font-size:28px;
+padding:0 20px;
+vertical-align:35%;
+}
+
+/*精彩球评*/
+#section-4{
+	padding-top:50px;
+}
+#section-4 .bxslider2 li{
+	background:#eeeeee;
+}
+#section-4 .bx-wrapper{
+	margin:0 auto;
+}
+#section-4 .bx-wrapper .bx-viewport {
+	width:90%;
+}
+#section-4 .bxslider2 .pure-g-r{
+	width:70%; margin:0 auto;
+}
+#section-4 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+	bottom:-57px;
+}
+
+#section-4 .bx-wrapper .bx-prev{
+	left:5%;
+	background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll 0 -106px transparent;
+}
+#section-4 .bx-wrapper .bx-prev:hover{
+		background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll 0 -159px transparent;
+}
+#section-4 .bx-wrapper .bx-next{
+	right:5%;
+	background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll -53px -106px transparent;
+}
+#section-4 .bx-wrapper .bx-next:hover{
+		background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll -53px -159px transparent;
+}
+#section-4 .bx-wrapper .bx-pager.bx-default-pager a{
+	background:url(../bower_components/bxslider-4/images/controls.png) no-repeat -183px 0;
+}
+#section-4 bx-wrapper .bx-pager.bx-default-pager a:hover,
+#section-4 .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background:url(../bower_components/bxslider-4/images/controls.png) no-repeat -195px 0;
+}
+.margin-top1{
+	margin-top:-1px;}
+
+#section-5 {
+	height:375px;
+	padding-top:125px;
+}
+#section-5 .pure-g-r{
+	width:70%; margin:0 auto;
+}
+#section-5 .pure-g-r .pure-u-3-5{
+	padding-left:25px;
+}
+#section-5 .pure-g-r .pure-u-3-5 h2{
+display:inline-block; margin-bottom:0px; font-size:1.4em; padding-right:100px;}
+footer ul{
+		margin:0 auto;
+}
+footer .pure-menu.pure-menu-open, .pure-menu.pure-menu-horizontal li .pure-menu-children {
+	text-align:center;
+	background:#fff;
+}
+footer .qrcode{
+	padding-top: 10px;
+	width: 120px;
+}
+
+/*返回顶部*/
+#topcontrol{transition:all 500ms ease;-webkit-transition:all 500ms ease;-moz-transition:all 500ms ease;-ms-transition:all 500ms ease;z-index:10000;}
+#topcontrol:hover{transform:rotate(-360deg);-webkit-transform:rotate(-360deg);-moz-transform:rotate(-360deg);-ms-transform:rotate(-360deg);}
+
+ .home-menu {
+        text-align: left;
+    }
+.home-menu ul {
+	float: right;
+}
+#section-3 .pure-g-r .pure-u-1-2{
+	text-align:center;
+}
+
+/*平板*/
+@media (max-width: 49em) {
+	#group .zu{
+		width: 50%;
+	}
+	#menu{
+		height:auto;
+		text-align:center;
+	}
+	.a-box{
+		padding:1em;	
+	}
+	.pure-menu a, .pure-menu .pure-menu-heading{
+		padding: 10px 30px;
+	}
+
+	#section-4{
+		padding-top: 0; 
+	}
+	#section-3 .pure-g-r .pure-u-1-2{
+		width:100%;
+	}
+	#section-4 .bxslider2 .pure-g-r {
+		width:100%;
+	}
+	#section-4 .bx-wrapper .bx-prev{
+		left:15px;
+		background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll 0 0; transparent;
+	}
+	#section-4 .bx-wrapper .bx-prev:hover{
+			background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll  0 -53px; transparent;
+	}
+	#section-4 .bx-wrapper .bx-next{
+			right:15px;
+		background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll -53px 0 transparent;
+	}
+	#section-4 .bx-wrapper .bx-next:hover{
+			background:url(../bower_components/bxslider-4/images/controls.png) no-repeat scroll -53px -53px transparent;
+	}
+
+}
+
+@media (max-width: 30em){
+	.pure-menu-fixed {
+		position: inherit;
+	}
+	.bx-wrapper .bx-caption span {
+
+		font-size: 1.2em;
+	
+	}
+	#menu .logo{
+		border:none;
+	}
+	.home-menu ul{
+		float:none;	
+	}
+	#logo{width:50%;}
+	.pure-menu a, .pure-menu .pure-menu-heading{
+		padding:0 5px;	
+	}
+
+	#section-3 .pure-g-r .vs{
+		vertical-align:10%;	
+	}
+	#nav{
+		/*width:100%;	
+		padding: 0px 30px;*/
+		display:none;
+	}
+	.game {
+		padding: 20px 0px;
+	}
+	#section-3 {
+		padding: 0;
+	}
+	
+	#group .zu {
+		width: 50%;
+        padding:5px 0;
+	}
+	#group .zu .team{
+		display:none;
+		width:155px;
+	}
+	.a-box{
+		padding:0.5em;	
+	}
+	.margin-top1-when-30{
+		margin-top:-1px;	
+	}
+	#section-5 .pure-g-r {
+		width: 90%;
+		text-align:center;
+	}
+	#section-5 .pure-g-r .pure-u-3-5 h2{
+		padding:0;	
+	}
+	.bx-wrapper .bx-prev,.bx-wrapper .bx-next{
+		display:none;
+	}
+    #section-2{
+        padding-top:0;
+    }
+	.bxslider2{
+		padding:0;
+	}
+	.bxslider2 li{
+		display:inherit;
+	}
+	li.fenzu,li.saicheng{
+		display:none;	
+	}
+	.pure-menu li a{
+		padding:0 5px;
+		border: none;	
+	}
+	.zu .team .c_text{
+		width:80px;
+	}
+	.zu .team .counrty{
+		margin-left:0;	
+	}
+	#section-2 h2,#section-3 h2{
+		margin-left:0;
+	}
+}
